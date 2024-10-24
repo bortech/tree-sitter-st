@@ -40,7 +40,8 @@
   "tree-sitter": [
     {
       "scope": "source.st",
-      "injection-regex": "^st$"
+      "file-types": ["st"],
+      "highlights": "queries/highlights.scm"
     }
   ]
 }

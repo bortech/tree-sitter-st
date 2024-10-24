@@ -20,11 +20,19 @@
             "named": true
           },
           {
+            "type": "bool_literal",
+            "named": true
+          },
+          {
             "type": "comp_op",
             "named": true
           },
           {
             "type": "dot_op",
+            "named": true
+          },
+          {
+            "type": "eq_op",
             "named": true
           },
           {
@@ -44,7 +52,19 @@
             "named": true
           },
           {
+            "type": "logic_op",
+            "named": true
+          },
+          {
             "type": "mul_op",
+            "named": true
+          },
+          {
+            "type": "not_eq_op",
+            "named": true
+          },
+          {
+            "type": "not_op",
             "named": true
           },
           {
@@ -53,10 +73,6 @@
           },
           {
             "type": "time_literal",
-            "named": true
-          },
-          {
-            "type": "un_op",
             "named": true
           }
         ]
@@ -78,11 +94,19 @@
             "named": true
           },
           {
+            "type": "bool_literal",
+            "named": true
+          },
+          {
             "type": "comp_op",
             "named": true
           },
           {
             "type": "dot_op",
+            "named": true
+          },
+          {
+            "type": "eq_op",
             "named": true
           },
           {
@@ -102,7 +126,19 @@
             "named": true
           },
           {
+            "type": "logic_op",
+            "named": true
+          },
+          {
             "type": "mul_op",
+            "named": true
+          },
+          {
+            "type": "not_eq_op",
+            "named": true
+          },
+          {
+            "type": "not_op",
             "named": true
           },
           {
@@ -111,10 +147,6 @@
           },
           {
             "type": "time_literal",
-            "named": true
-          },
-          {
-            "type": "un_op",
             "named": true
           }
         ]
@@ -195,11 +227,19 @@
             "named": true
           },
           {
+            "type": "bool_literal",
+            "named": true
+          },
+          {
             "type": "comp_op",
             "named": true
           },
           {
             "type": "dot_op",
+            "named": true
+          },
+          {
+            "type": "eq_op",
             "named": true
           },
           {
@@ -219,7 +259,19 @@
             "named": true
           },
           {
+            "type": "logic_op",
+            "named": true
+          },
+          {
             "type": "mul_op",
+            "named": true
+          },
+          {
+            "type": "not_eq_op",
+            "named": true
+          },
+          {
+            "type": "not_op",
             "named": true
           },
           {
@@ -228,10 +280,6 @@
           },
           {
             "type": "time_literal",
-            "named": true
-          },
-          {
-            "type": "un_op",
             "named": true
           }
         ]
@@ -253,11 +301,19 @@
             "named": true
           },
           {
+            "type": "bool_literal",
+            "named": true
+          },
+          {
             "type": "comp_op",
             "named": true
           },
           {
             "type": "dot_op",
+            "named": true
+          },
+          {
+            "type": "eq_op",
             "named": true
           },
           {
@@ -277,7 +333,19 @@
             "named": true
           },
           {
+            "type": "logic_op",
+            "named": true
+          },
+          {
             "type": "mul_op",
+            "named": true
+          },
+          {
+            "type": "not_eq_op",
+            "named": true
+          },
+          {
+            "type": "not_op",
             "named": true
           },
           {
@@ -286,10 +354,6 @@
           },
           {
             "type": "time_literal",
-            "named": true
-          },
-          {
-            "type": "un_op",
             "named": true
           }
         ]
@@ -349,11 +413,19 @@
             "named": true
           },
           {
+            "type": "bool_literal",
+            "named": true
+          },
+          {
             "type": "comp_op",
             "named": true
           },
           {
             "type": "dot_op",
+            "named": true
+          },
+          {
+            "type": "eq_op",
             "named": true
           },
           {
@@ -373,7 +445,19 @@
             "named": true
           },
           {
+            "type": "logic_op",
+            "named": true
+          },
+          {
             "type": "mul_op",
+            "named": true
+          },
+          {
+            "type": "not_eq_op",
+            "named": true
+          },
+          {
+            "type": "not_op",
             "named": true
           },
           {
@@ -382,10 +466,6 @@
           },
           {
             "type": "time_literal",
-            "named": true
-          },
-          {
-            "type": "un_op",
             "named": true
           }
         ]
@@ -407,11 +487,19 @@
             "named": true
           },
           {
+            "type": "bool_literal",
+            "named": true
+          },
+          {
             "type": "comp_op",
             "named": true
           },
           {
             "type": "dot_op",
+            "named": true
+          },
+          {
+            "type": "eq_op",
             "named": true
           },
           {
@@ -431,7 +519,19 @@
             "named": true
           },
           {
+            "type": "logic_op",
+            "named": true
+          },
+          {
             "type": "mul_op",
+            "named": true
+          },
+          {
+            "type": "not_eq_op",
+            "named": true
+          },
+          {
+            "type": "not_op",
             "named": true
           },
           {
@@ -440,10 +540,6 @@
           },
           {
             "type": "time_literal",
-            "named": true
-          },
-          {
-            "type": "un_op",
             "named": true
           }
         ]
@@ -504,6 +600,10 @@
           "named": true
         },
         {
+          "type": "bool_literal",
+          "named": true
+        },
+        {
           "type": "code_block",
           "named": true
         },
@@ -513,6 +613,10 @@
         },
         {
           "type": "dot_op",
+          "named": true
+        },
+        {
+          "type": "eq_op",
           "named": true
         },
         {
@@ -532,7 +636,19 @@
           "named": true
         },
         {
+          "type": "logic_op",
+          "named": true
+        },
+        {
           "type": "mul_op",
+          "named": true
+        },
+        {
+          "type": "not_eq_op",
+          "named": true
+        },
+        {
+          "type": "not_op",
           "named": true
         },
         {
@@ -542,18 +658,242 @@
         {
           "type": "time_literal",
           "named": true
-        },
-        {
-          "type": "un_op",
-          "named": true
         }
       ]
+    }
+  },
+  {
+    "type": "eq_op",
+    "named": true,
+    "fields": {
+      "lhs": {
+        "multiple": true,
+        "required": true,
+        "types": [
+          {
+            "type": "(",
+            "named": false
+          },
+          {
+            "type": ")",
+            "named": false
+          },
+          {
+            "type": "add_op",
+            "named": true
+          },
+          {
+            "type": "bool_literal",
+            "named": true
+          },
+          {
+            "type": "comp_op",
+            "named": true
+          },
+          {
+            "type": "dot_op",
+            "named": true
+          },
+          {
+            "type": "eq_op",
+            "named": true
+          },
+          {
+            "type": "func_call",
+            "named": true
+          },
+          {
+            "type": "identifier",
+            "named": true
+          },
+          {
+            "type": "index_op",
+            "named": true
+          },
+          {
+            "type": "integer_literal",
+            "named": true
+          },
+          {
+            "type": "logic_op",
+            "named": true
+          },
+          {
+            "type": "mul_op",
+            "named": true
+          },
+          {
+            "type": "not_eq_op",
+            "named": true
+          },
+          {
+            "type": "not_op",
+            "named": true
+          },
+          {
+            "type": "real_literal",
+            "named": true
+          },
+          {
+            "type": "time_literal",
+            "named": true
+          }
+        ]
+      },
+      "rhs": {
+        "multiple": true,
+        "required": true,
+        "types": [
+          {
+            "type": "(",
+            "named": false
+          },
+          {
+            "type": ")",
+            "named": false
+          },
+          {
+            "type": "add_op",
+            "named": true
+          },
+          {
+            "type": "bool_literal",
+            "named": true
+          },
+          {
+            "type": "comp_op",
+            "named": true
+          },
+          {
+            "type": "dot_op",
+            "named": true
+          },
+          {
+            "type": "eq_op",
+            "named": true
+          },
+          {
+            "type": "func_call",
+            "named": true
+          },
+          {
+            "type": "identifier",
+            "named": true
+          },
+          {
+            "type": "index_op",
+            "named": true
+          },
+          {
+            "type": "integer_literal",
+            "named": true
+          },
+          {
+            "type": "logic_op",
+            "named": true
+          },
+          {
+            "type": "mul_op",
+            "named": true
+          },
+          {
+            "type": "not_eq_op",
+            "named": true
+          },
+          {
+            "type": "not_op",
+            "named": true
+          },
+          {
+            "type": "real_literal",
+            "named": true
+          },
+          {
+            "type": "time_literal",
+            "named": true
+          }
+        ]
+      }
     }
   },
   {
     "type": "fb_call_statement",
     "named": true,
     "fields": {
+      "arg": {
+        "multiple": true,
+        "required": false,
+        "types": [
+          {
+            "type": "(",
+            "named": false
+          },
+          {
+            "type": ")",
+            "named": false
+          },
+          {
+            "type": "add_op",
+            "named": true
+          },
+          {
+            "type": "bool_literal",
+            "named": true
+          },
+          {
+            "type": "comp_op",
+            "named": true
+          },
+          {
+            "type": "dot_op",
+            "named": true
+          },
+          {
+            "type": "eq_op",
+            "named": true
+          },
+          {
+            "type": "func_call",
+            "named": true
+          },
+          {
+            "type": "identifier",
+            "named": true
+          },
+          {
+            "type": "index_op",
+            "named": true
+          },
+          {
+            "type": "integer_literal",
+            "named": true
+          },
+          {
+            "type": "logic_op",
+            "named": true
+          },
+          {
+            "type": "mul_op",
+            "named": true
+          },
+          {
+            "type": "not_eq_op",
+            "named": true
+          },
+          {
+            "type": "not_op",
+            "named": true
+          },
+          {
+            "type": "real_literal",
+            "named": true
+          },
+          {
+            "type": "time_literal",
+            "named": true
+          }
+        ]
+      },
       "name": {
         "multiple": false,
         "required": true,
@@ -607,11 +947,19 @@
             "named": true
           },
           {
+            "type": "bool_literal",
+            "named": true
+          },
+          {
             "type": "comp_op",
             "named": true
           },
           {
             "type": "dot_op",
+            "named": true
+          },
+          {
+            "type": "eq_op",
             "named": true
           },
           {
@@ -631,7 +979,19 @@
             "named": true
           },
           {
+            "type": "logic_op",
+            "named": true
+          },
+          {
             "type": "mul_op",
+            "named": true
+          },
+          {
+            "type": "not_eq_op",
+            "named": true
+          },
+          {
+            "type": "not_op",
             "named": true
           },
           {
@@ -640,10 +1000,6 @@
           },
           {
             "type": "time_literal",
-            "named": true
-          },
-          {
-            "type": "un_op",
             "named": true
           }
         ]
@@ -681,11 +1037,19 @@
             "named": true
           },
           {
+            "type": "bool_literal",
+            "named": true
+          },
+          {
             "type": "comp_op",
             "named": true
           },
           {
             "type": "dot_op",
+            "named": true
+          },
+          {
+            "type": "eq_op",
             "named": true
           },
           {
@@ -705,7 +1069,19 @@
             "named": true
           },
           {
+            "type": "logic_op",
+            "named": true
+          },
+          {
             "type": "mul_op",
+            "named": true
+          },
+          {
+            "type": "not_eq_op",
+            "named": true
+          },
+          {
+            "type": "not_op",
             "named": true
           },
           {
@@ -714,10 +1090,6 @@
           },
           {
             "type": "time_literal",
-            "named": true
-          },
-          {
-            "type": "un_op",
             "named": true
           }
         ]
@@ -783,6 +1155,62 @@
     }
   },
   {
+    "type": "function_def",
+    "named": true,
+    "fields": {
+      "name": {
+        "multiple": false,
+        "required": true,
+        "types": [
+          {
+            "type": "identifier",
+            "named": true
+          }
+        ]
+      },
+      "return_type": {
+        "multiple": false,
+        "required": true,
+        "types": [
+          {
+            "type": "array_type",
+            "named": true
+          },
+          {
+            "type": "builtin_type",
+            "named": true
+          },
+          {
+            "type": "identifier",
+            "named": true
+          }
+        ]
+      }
+    },
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "code_block",
+          "named": true
+        },
+        {
+          "type": "var_class_decl",
+          "named": true
+        },
+        {
+          "type": "var_in_class_decl",
+          "named": true
+        },
+        {
+          "type": "var_out_class_decl",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
     "type": "if_statement",
     "named": true,
     "fields": {
@@ -803,11 +1231,19 @@
             "named": true
           },
           {
+            "type": "bool_literal",
+            "named": true
+          },
+          {
             "type": "comp_op",
             "named": true
           },
           {
             "type": "dot_op",
+            "named": true
+          },
+          {
+            "type": "eq_op",
             "named": true
           },
           {
@@ -827,7 +1263,19 @@
             "named": true
           },
           {
+            "type": "logic_op",
+            "named": true
+          },
+          {
             "type": "mul_op",
+            "named": true
+          },
+          {
+            "type": "not_eq_op",
+            "named": true
+          },
+          {
+            "type": "not_op",
             "named": true
           },
           {
@@ -836,10 +1284,6 @@
           },
           {
             "type": "time_literal",
-            "named": true
-          },
-          {
-            "type": "un_op",
             "named": true
           }
         ]
@@ -885,11 +1329,19 @@
             "named": true
           },
           {
+            "type": "bool_literal",
+            "named": true
+          },
+          {
             "type": "comp_op",
             "named": true
           },
           {
             "type": "dot_op",
+            "named": true
+          },
+          {
+            "type": "eq_op",
             "named": true
           },
           {
@@ -909,7 +1361,19 @@
             "named": true
           },
           {
+            "type": "logic_op",
+            "named": true
+          },
+          {
             "type": "mul_op",
+            "named": true
+          },
+          {
+            "type": "not_eq_op",
+            "named": true
+          },
+          {
+            "type": "not_op",
             "named": true
           },
           {
@@ -918,10 +1382,6 @@
           },
           {
             "type": "time_literal",
-            "named": true
-          },
-          {
-            "type": "un_op",
             "named": true
           }
         ]
@@ -932,6 +1392,160 @@
         "types": [
           {
             "type": "identifier",
+            "named": true
+          }
+        ]
+      }
+    }
+  },
+  {
+    "type": "logic_op",
+    "named": true,
+    "fields": {
+      "lhs": {
+        "multiple": true,
+        "required": true,
+        "types": [
+          {
+            "type": "(",
+            "named": false
+          },
+          {
+            "type": ")",
+            "named": false
+          },
+          {
+            "type": "add_op",
+            "named": true
+          },
+          {
+            "type": "bool_literal",
+            "named": true
+          },
+          {
+            "type": "comp_op",
+            "named": true
+          },
+          {
+            "type": "dot_op",
+            "named": true
+          },
+          {
+            "type": "eq_op",
+            "named": true
+          },
+          {
+            "type": "func_call",
+            "named": true
+          },
+          {
+            "type": "identifier",
+            "named": true
+          },
+          {
+            "type": "index_op",
+            "named": true
+          },
+          {
+            "type": "integer_literal",
+            "named": true
+          },
+          {
+            "type": "logic_op",
+            "named": true
+          },
+          {
+            "type": "mul_op",
+            "named": true
+          },
+          {
+            "type": "not_eq_op",
+            "named": true
+          },
+          {
+            "type": "not_op",
+            "named": true
+          },
+          {
+            "type": "real_literal",
+            "named": true
+          },
+          {
+            "type": "time_literal",
+            "named": true
+          }
+        ]
+      },
+      "rhs": {
+        "multiple": true,
+        "required": true,
+        "types": [
+          {
+            "type": "(",
+            "named": false
+          },
+          {
+            "type": ")",
+            "named": false
+          },
+          {
+            "type": "add_op",
+            "named": true
+          },
+          {
+            "type": "bool_literal",
+            "named": true
+          },
+          {
+            "type": "comp_op",
+            "named": true
+          },
+          {
+            "type": "dot_op",
+            "named": true
+          },
+          {
+            "type": "eq_op",
+            "named": true
+          },
+          {
+            "type": "func_call",
+            "named": true
+          },
+          {
+            "type": "identifier",
+            "named": true
+          },
+          {
+            "type": "index_op",
+            "named": true
+          },
+          {
+            "type": "integer_literal",
+            "named": true
+          },
+          {
+            "type": "logic_op",
+            "named": true
+          },
+          {
+            "type": "mul_op",
+            "named": true
+          },
+          {
+            "type": "not_eq_op",
+            "named": true
+          },
+          {
+            "type": "not_op",
+            "named": true
+          },
+          {
+            "type": "real_literal",
+            "named": true
+          },
+          {
+            "type": "time_literal",
             "named": true
           }
         ]
@@ -959,11 +1573,19 @@
             "named": true
           },
           {
+            "type": "bool_literal",
+            "named": true
+          },
+          {
             "type": "comp_op",
             "named": true
           },
           {
             "type": "dot_op",
+            "named": true
+          },
+          {
+            "type": "eq_op",
             "named": true
           },
           {
@@ -983,7 +1605,19 @@
             "named": true
           },
           {
+            "type": "logic_op",
+            "named": true
+          },
+          {
             "type": "mul_op",
+            "named": true
+          },
+          {
+            "type": "not_eq_op",
+            "named": true
+          },
+          {
+            "type": "not_op",
             "named": true
           },
           {
@@ -992,10 +1626,6 @@
           },
           {
             "type": "time_literal",
-            "named": true
-          },
-          {
-            "type": "un_op",
             "named": true
           }
         ]
@@ -1017,11 +1647,19 @@
             "named": true
           },
           {
+            "type": "bool_literal",
+            "named": true
+          },
+          {
             "type": "comp_op",
             "named": true
           },
           {
             "type": "dot_op",
+            "named": true
+          },
+          {
+            "type": "eq_op",
             "named": true
           },
           {
@@ -1041,7 +1679,19 @@
             "named": true
           },
           {
+            "type": "logic_op",
+            "named": true
+          },
+          {
             "type": "mul_op",
+            "named": true
+          },
+          {
+            "type": "not_eq_op",
+            "named": true
+          },
+          {
+            "type": "not_op",
             "named": true
           },
           {
@@ -1051,9 +1701,159 @@
           {
             "type": "time_literal",
             "named": true
+          }
+        ]
+      }
+    }
+  },
+  {
+    "type": "not_eq_op",
+    "named": true,
+    "fields": {
+      "lhs": {
+        "multiple": true,
+        "required": true,
+        "types": [
+          {
+            "type": "(",
+            "named": false
           },
           {
-            "type": "un_op",
+            "type": ")",
+            "named": false
+          },
+          {
+            "type": "add_op",
+            "named": true
+          },
+          {
+            "type": "bool_literal",
+            "named": true
+          },
+          {
+            "type": "comp_op",
+            "named": true
+          },
+          {
+            "type": "dot_op",
+            "named": true
+          },
+          {
+            "type": "eq_op",
+            "named": true
+          },
+          {
+            "type": "func_call",
+            "named": true
+          },
+          {
+            "type": "identifier",
+            "named": true
+          },
+          {
+            "type": "index_op",
+            "named": true
+          },
+          {
+            "type": "integer_literal",
+            "named": true
+          },
+          {
+            "type": "logic_op",
+            "named": true
+          },
+          {
+            "type": "mul_op",
+            "named": true
+          },
+          {
+            "type": "not_eq_op",
+            "named": true
+          },
+          {
+            "type": "not_op",
+            "named": true
+          },
+          {
+            "type": "real_literal",
+            "named": true
+          },
+          {
+            "type": "time_literal",
+            "named": true
+          }
+        ]
+      },
+      "rhs": {
+        "multiple": true,
+        "required": true,
+        "types": [
+          {
+            "type": "(",
+            "named": false
+          },
+          {
+            "type": ")",
+            "named": false
+          },
+          {
+            "type": "add_op",
+            "named": true
+          },
+          {
+            "type": "bool_literal",
+            "named": true
+          },
+          {
+            "type": "comp_op",
+            "named": true
+          },
+          {
+            "type": "dot_op",
+            "named": true
+          },
+          {
+            "type": "eq_op",
+            "named": true
+          },
+          {
+            "type": "func_call",
+            "named": true
+          },
+          {
+            "type": "identifier",
+            "named": true
+          },
+          {
+            "type": "index_op",
+            "named": true
+          },
+          {
+            "type": "integer_literal",
+            "named": true
+          },
+          {
+            "type": "logic_op",
+            "named": true
+          },
+          {
+            "type": "mul_op",
+            "named": true
+          },
+          {
+            "type": "not_eq_op",
+            "named": true
+          },
+          {
+            "type": "not_op",
+            "named": true
+          },
+          {
+            "type": "real_literal",
+            "named": true
+          },
+          {
+            "type": "time_literal",
             "named": true
           }
         ]
@@ -1061,27 +1861,7 @@
     }
   },
   {
-    "type": "qualifier",
-    "named": true,
-    "fields": {}
-  },
-  {
-    "type": "source_file",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": true,
-      "types": [
-        {
-          "type": "function_block_def",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "un_op",
+    "type": "not_op",
     "named": true,
     "fields": {},
     "children": {
@@ -1093,11 +1873,19 @@
           "named": true
         },
         {
+          "type": "bool_literal",
+          "named": true
+        },
+        {
           "type": "comp_op",
           "named": true
         },
         {
           "type": "dot_op",
+          "named": true
+        },
+        {
+          "type": "eq_op",
           "named": true
         },
         {
@@ -1117,7 +1905,19 @@
           "named": true
         },
         {
+          "type": "logic_op",
+          "named": true
+        },
+        {
           "type": "mul_op",
+          "named": true
+        },
+        {
+          "type": "not_eq_op",
+          "named": true
+        },
+        {
+          "type": "not_op",
           "named": true
         },
         {
@@ -1127,9 +1927,29 @@
         {
           "type": "time_literal",
           "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "qualifier",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "source_file",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "function_block_def",
+          "named": true
         },
         {
-          "type": "un_op",
+          "type": "function_def",
           "named": true
         }
       ]
@@ -1222,6 +2042,10 @@
       "required": true,
       "types": [
         {
+          "type": "bool_literal",
+          "named": true
+        },
+        {
           "type": "integer_literal",
           "named": true
         },
@@ -1308,6 +2132,14 @@
     "named": false
   },
   {
+    "type": "<=",
+    "named": false
+  },
+  {
+    "type": "<>",
+    "named": false
+  },
+  {
     "type": "=",
     "named": false
   },
@@ -1317,6 +2149,10 @@
   },
   {
     "type": ">=",
+    "named": false
+  },
+  {
+    "type": "AND",
     "named": false
   },
   {
@@ -1356,6 +2192,10 @@
     "named": false
   },
   {
+    "type": "END_FUNCTION",
+    "named": false
+  },
+  {
     "type": "END_FUNCTION_BLOCK",
     "named": false
   },
@@ -1369,6 +2209,10 @@
   },
   {
     "type": "FOR",
+    "named": false
+  },
+  {
+    "type": "FUNCTION",
     "named": false
   },
   {
@@ -1397,6 +2241,10 @@
   },
   {
     "type": "LWORD",
+    "named": false
+  },
+  {
+    "type": "MOD",
     "named": false
   },
   {
@@ -1472,12 +2320,20 @@
     "named": false
   },
   {
+    "type": "XOR",
+    "named": false
+  },
+  {
     "type": "[",
     "named": false
   },
   {
     "type": "]",
     "named": false
+  },
+  {
+    "type": "bool_literal",
+    "named": true
   },
   {
     "type": "comment",

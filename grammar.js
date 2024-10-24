@@ -9,16 +9,27 @@ module.exports = grammar({
 
   precedences: _ => [
     [
-      'comp',
-      'mul',
-      'add',
+      'par',
+      'fcall',
+      'expt',
+      'un_minus',
+      'not',
+      'mul', // *,/,MOD
+      'add', // +,-  
+      'comp', // <,>,<=,>=
+      'eq', // =
+      'not_eq', // <>
+      'logic', // AND, OR, XOR
     ],
   ],
 
   rules: {
     source_file: $ => repeat1($._definition),
 
-    _definition: $ => choice( $.function_block_def),
+    _definition: $ => choice( 
+      $.function_block_def,
+      $.function_def,
+    ),
 
     function_block_def: $ => seq(
             'FUNCTION_BLOCK',
@@ -27,6 +38,16 @@ module.exports = grammar({
             $.code_block,
             'END_FUNCTION_BLOCK'
         ),
+
+    function_def: $ => seq(
+      'FUNCTION',
+      field('name', $.identifier),
+      ':',
+      field('return_type', $._type),
+      $._var_decl_block,
+      $.code_block,
+      'END_FUNCTION'
+    ),
 
     _var_decl_block: $ => repeat1($._var_group_decl),
 
@@ -132,14 +153,15 @@ module.exports = grammar({
       $.add_op,
       $.mul_op,
       $.comp_op,
-      $.un_op,
+      $.not_op,
       $.func_call,
       $.dot_op,
       $.index_op,
       $._par_expr,
+      $.eq_op,
+      $.not_eq_op,
+      $.logic_op,
     ),
-
-    _par_expr: $ => seq('(', $._expression, ')'),
 
     dot_op: $ => seq(
       field('parent', $.identifier), 
@@ -154,40 +176,60 @@ module.exports = grammar({
       ']'
     ),
 
+    _par_expr: $ => prec('par', seq('(', $._expression, ')')),
+
     add_op: $ => prec.left('add', seq(
       field('lhs', $._expression),
-      choice('+', '-', 'OR'),
+      choice('+', '-'),
       field('rhs', $._expression),
     )),
 
     mul_op: $ => prec.left('mul', seq(
       field('lhs', $._expression),
-      choice('*', '/', '&'),
+      choice('*', '/', 'MOD'),
+      field('rhs', $._expression),
+    )),
+
+    logic_op: $ => prec.left('logic', seq(
+      field('lhs', $._expression),
+      choice('AND', 'OR', 'XOR', '&'),
       field('rhs', $._expression),
     )),
 
     comp_op: $ => prec.left('comp', seq(
       field('lhs', $._expression),
-      choice('<', '>', '>=', '>=', '='),
+      choice('<', '>', '>=', '<='),
       field('rhs', $._expression),
     )),
 
-    un_op: $ => prec.left(2, seq('NOT', $._expression)),
+    eq_op: $ => prec.left('eq', seq(
+      field('lhs', $._expression),
+      '=',
+      field('rhs', $._expression),
+    )),
+
+    not_eq_op: $ => prec.left('not_eq', seq(
+      field('lhs', $._expression),
+      '<>',
+      field('rhs', $._expression),
+    )),
+
+    not_op: $ => prec.left('not', seq('NOT', $._expression)),
 
     fb_call_statement: $ => seq(
       field('name', $.identifier), 
       '(', 
-      optional($._named_arg_list),
+      choice($._arg_list, $._named_arg_list),
       ')', 
       ';'
     ),
 
-    func_call: $ => seq(
+    func_call: $ => prec('fcall', seq(
       field('name', $.identifier), 
       '(', 
       choice($._arg_list, $._named_arg_list),
       ')'
-    ),
+    )),
 
     _argument: $ => field('arg', $._expression),
     _named_argument: $ => field('named_arg', $.assign_op),
@@ -201,11 +243,13 @@ module.exports = grammar({
       $.integer_literal,
       $.real_literal,
       $.time_literal,
+      $.bool_literal,
     ),
 
     integer_literal: _ => token(/[+-]?[0-9]+/),
     real_literal: _ => token(/[+-]?[0-9]*\.[0-9]+/),
     time_literal: _ => token(/[tT]#\d+s/),
+    bool_literal: _ => token(choice('TRUE', 'FALSE')),
 
     comment: _ => token(/\(\*([^*]*[*]+[^)*])*[^*]*[*]+\)/),
     pragma: _ => token(seq('{', /([^$}][^}]*)?/, '}')),

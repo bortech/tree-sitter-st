@@ -1,0 +1,55 @@
+(*
+ * An IEC 61131-3 compiler.
+ *
+ * Based on the
+ * FINAL DRAFT - IEC 61131-3, 2nd Ed. (2001-12-10)
+ *
+ *)
+
+(*
+ * This is part of the library conatining the functions
+ * and function blocks defined in the standard.
+ *
+ * SR and RS function blocks
+ * -------------------------
+ *)
+
+(* The standard defines the SR FB thus: 
+
+                  +-----+
+S1----------------| >=1 |---Q1
+         +---+    |     |
+ R------O| & |----|     |
+ Q1------|   |    |     |
+         +---+    +-----+
+*)
+
+FUNCTION_BLOCK SR
+  VAR_INPUT
+    S1, R : BOOL;
+  END_VAR
+  VAR_OUTPUT
+    Q1 : BOOL;
+  END_VAR
+  Q1 := S1 OR ((NOT R) AND Q1);
+END_FUNCTION_BLOCK
+
+
+(* The standard defines the RS FB thus: 
+                   +---+
+R1----------------O| & |---Q1
+        +-----+    |   |
+S-------| >=1 |----|   |
+Q1------|     |    |   |
+        +-----+    +---+
+*)
+
+FUNCTION_BLOCK RS
+  VAR_INPUT
+    S, R1 : BOOL;
+  END_VAR
+  VAR_OUTPUT
+    Q1 : BOOL;
+  END_VAR
+  Q1 := (NOT R1) AND (S OR Q1);
+END_FUNCTION_BLOCK
